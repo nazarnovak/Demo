@@ -1,0 +1,15 @@
+<header class="m-header" role="navigation">
+  <ul class="m-nav">
+    <li class="m-nav-logo">
+      <a href="/" title="Messages About Recent Commits">
+        Logo
+      </a>
+    </li>
+    {% if userLoggedIn %}
+        <li class="m-nav-button"><a href="/logout">Log Out</a></li>
+    {% else %}
+        <li class="m-nav-button"><a href="/login">Log In</a></li>
+        <li class="m-nav-button"><a href="/join">Join</a></li>
+    {% endif %}
+  </ul>
+</header>
